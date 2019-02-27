@@ -1,15 +1,22 @@
-Language Translation
+Language Translation Integration
 ==============
 
 ![This script was last tested in Nuix 7.8](https://img.shields.io/badge/Script%20Tested%20in%20Nuix-7.8-green.svg)
 
-View the GitHub project [here](https://github.com/Nuix/Language-Translation) or download the latest release [here](https://github.com/Nuix/Language-Translation/releases).
+View the GitHub project [here](https://github.com/Nuix/Language-Translation-Integration) or download the latest release [here](https://github.com/Nuix/Language-Translation-Integration/releases).
 
 # Overview
 
-The Language Translation script integrates with third-party translation services like Google Cloud Translation or Microsoft Cognitive Services. Translated text can be added as custom metadata, or appended to (or cleared from) an item's text.
+The Language Translation Integration project integrates with third-party translation services like Google Cloud Translation or Microsoft Cognitive Services. Translated text can be added as custom metadata, or appended to (or cleared from) an item's text.
 
 # Getting Started
+
+## Setup
+
+Begin by downloading the latest release of this code.  Extract the contents of the archive into your Nuix scripts directory.  In Windows the script directory is likely going to be either of the following:
+
+- `%appdata%\Nuix\Scripts` - User level script directory
+- `%programdata%\Nuix\Scripts` - System level script directory
 
 ## Prerequisites for Google Cloud Translation
 ### Google Cloud Translation API Access
@@ -35,20 +42,15 @@ You will need a key for Microsoft's Translator Text API. This can be obtained by
 3. Adding & configuring a Text-Translation Service.
 4. Once created the API key is accessible from the console.
 
-## Setup
-
-Begin by downloading the latest release of this code.  Extract the contents of the archive into your Nuix scripts directory.  In Windows the script directory is likely going to be either of the following:
-
-- `%appdata%\Nuix\Scripts` - User level script directory
-- `%programdata%\Nuix\Scripts` - System level script directory
-
 # Running the Script
 The script requires a case be opened and items are selected. Once you have selected items and started the script, an input dialog will prompt the user to select from the available `NuixTranslator` options. The selected `NuixTranslator` will prompt for settings (if required) and present a progress dialog as it runs through the current selected items.
+
+The script uses sticky settings which are kept within the script's directory. Each `NuixTranslator` will have its own sticky settings, and settings can be saved/loaded through JSON.
 
 ## The `NuixTranslator` Class
 The `NuixTranslator` class is the base class for presenting a settings dialog and progress dialog as it runs through the current selected items. Translated text can be appended to an item's original text or added to the item as custom metadata.
 
-New options can be implemented by creating new `NuixTranslator` subclasses. Your class must define a constant `NAME` string representing the translation option (used when showing dialogs), and a public method `.run(items)` to get the input settings and iterate over the selected items.
+New options can be implemented by creating new `NuixTranslator` subclasses. Each class defines a constant `NAME` string representing the translation option (used when showing dialogs), and a public method `.run(items)` to get the input settings and iterate over the selected items. The script uses introspection to locate all the classes which derive from `NuixTranslator`, so there is no extra work that needs to be done to make script aware of your `NuixTranslator` except make sure the class file is placed in the script's sub-directory "Translators".
 
 ### Translation Options
 
@@ -56,16 +58,18 @@ New options can be implemented by creating new `NuixTranslator` subclasses. Your
 - *Operation* - Append Text or Add Custom Metadata.
   - Append Text will use the separator: "\n----------Translation to <Language>---------\n"
   - Add Custom Metadata will use the field name "Translation to <Language>"
+  
+## `NuixTranslator` Subclasses
 
-### Google Cloud Translation
+## Google Cloud Translation
 Uses Google Cloud Translation through the EasyTranslate gem.
 
 Adds the ability to detect an item's language, annotating the item's language as a tag or custom metadata.
 
-### Microsoft Cognitive Services
+## Microsoft Cognitive Services
 Uses the Microsoft Translator Text API.
 
-### Clear Translations
+## Clear Translations
 Removes translation text from selected items, obtaining an item's original text using methods from `NuixTranslator`.
 
 # Cloning this Repository

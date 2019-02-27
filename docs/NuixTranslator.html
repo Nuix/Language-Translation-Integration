@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: NuixTranslator
+  
+    &mdash; Documentation by YARD 0.9.16
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "NuixTranslator";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index (N)</a> &raquo;
+    
+    
+    <span class="title">NuixTranslator</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: NuixTranslator
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">NuixTranslator</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>Ruby/translation.nuixscript/language_translation.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Base class for translating items.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><div id="subclasses">
+  <h2>Direct Known Subclasses</h2>
+  <p class="children"><span class='object_link'><a href="ClearTranslations.html" title="ClearTranslations (class)">ClearTranslations</a></span>, <span class='object_link'><a href="GoogleEasyTranslate.html" title="GoogleEasyTranslate (class)">GoogleEasyTranslate</a></span>, <span class='object_link'><a href="MicrosoftCognitiveServices.html" title="MicrosoftCognitiveServices (class)">MicrosoftCognitiveServices</a></span></p>
+</div>
+
+  
+    <h2>
+      Constant Summary
+      <small><a href="#" class="constants_summary_toggle">collapse</a></small>
+    </h2>
+
+    <dl class="constants">
+      
+        <dt id="SCRIPT_DIR-constant" class="">SCRIPT_DIR =
+          
+        </dt>
+        <dd><pre class="code"><span class='const'>File</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='const'>File</span><span class='period'>.</span><span class='id identifier rubyid_dirname'>dirname</span><span class='lparen'>(</span><span class='kw'>__FILE__</span><span class='rparen'>)</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Translators</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span></pre></dd>
+      
+    </dl>
+  
+
+
+
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#translators-class_method" title="translators (class method)">.<strong>translators</strong>  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The NuixTranslator subclasses.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="protected ">
+  <span class="summary_signature">
+    
+      <a href="#add_translation-instance_method" title="#add_translation (instance method)">#<strong>add_translation</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title protected">protected</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Adds translation options to main tab of dialog.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="protected ">
+  <span class="summary_signature">
+    
+      <a href="#advance-instance_method" title="#advance (instance method)">#<strong>advance</strong>(index, status)  &#x21d2; nil, true </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title protected">protected</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Advances progress.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="protected ">
+  <span class="summary_signature">
+    
+      <a href="#get_new_text-instance_method" title="#get_new_text (instance method)">#<strong>get_new_text</strong>(original, translated)  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title protected">protected</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns new text with translation appended.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="protected ">
+  <span class="summary_signature">
+    
+      <a href="#get_original_text-instance_method" title="#get_original_text (instance method)">#<strong>get_original_text</strong>(item)  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title protected">protected</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns original text if it had been translated.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(name, languages)  &#x21d2; NuixTranslator </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Creates a new Translator.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="protected ">
+  <span class="summary_signature">
+    
+      <a href="#progress_dialog-instance_method" title="#progress_dialog (instance method)">#<strong>progress_dialog</strong>(progress, title)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title protected">protected</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Initializes progress dialog @progress.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="protected ">
+  <span class="summary_signature">
+    
+      <a href="#run-instance_method" title="#run (instance method)">#<strong>run</strong>(items)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title protected">protected</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Shows dialog and updates @settings with input results.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="protected ">
+  <span class="summary_signature">
+    
+      <a href="#translate-instance_method" title="#translate (instance method)">#<strong>translate</strong>(item, translated)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title protected">protected</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Updates item with translation.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#translation_message-instance_method" title="#translation_message (instance method)">#<strong>translation_message</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The translation message.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    #<strong>initialize</strong>(name, languages)  &#x21d2; <tt><span class='object_link'><a href="" title="NuixTranslator (class)">NuixTranslator</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Creates a new Translator.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>name</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>NuixTranslator subclass name</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>languages</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>{ &#39;en&#39; =&gt; &#39;english&#39;, … }</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+35
+36
+37
+38
+39
+40
+41
+42
+43</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Ruby/translation.nuixscript/language_translation.rb', line 35</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='comma'>,</span> <span class='id identifier rubyid_languages'>languages</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_settings_file'>settings_file</span> <span class='op'>=</span> <span class='const'>File</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="#SCRIPT_DIR-constant" title="NuixTranslator::SCRIPT_DIR (constant)">SCRIPT_DIR</a></span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_name'>name</span><span class='embexpr_end'>}</span><span class='tstring_content'>.json</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+  <span class='ivar'>@options</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Append Text</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Add Custom Metadata</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+  <span class='ivar'>@langs</span> <span class='op'>=</span> <span class='id identifier rubyid_languages'>languages</span>
+  <span class='ivar'>@items</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+  <span class='ivar'>@input</span> <span class='op'>=</span> <span class='const'>TabbedCustomDialog</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Language Translation</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='ivar'>@input</span><span class='period'>.</span><span class='id identifier rubyid_enableStickySettings'>enableStickySettings</span><span class='lparen'>(</span><span class='id identifier rubyid_settings_file'>settings_file</span><span class='rparen'>)</span>
+  <span class='ivar'>@main_tab</span> <span class='op'>=</span> <span class='ivar'>@input</span><span class='period'>.</span><span class='id identifier rubyid_addTab'>addTab</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>main_tab</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_name'>name</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="translators-class_method">
+  
+    .<strong>translators</strong>  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The NuixTranslator subclasses.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Name&#39; =&gt; NuixTranslator subclass</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+21
+22
+23
+24
+25
+26
+27
+28
+29</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Ruby/translation.nuixscript/language_translation.rb', line 21</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_translators'>translators</span>
+  <span class='id identifier rubyid_subs'>subs</span> <span class='op'>=</span> <span class='const'>Dir</span><span class='period'>.</span><span class='id identifier rubyid_glob'>glob</span><span class='lparen'>(</span><span class='const'>File</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="#SCRIPT_DIR-constant" title="NuixTranslator::SCRIPT_DIR (constant)">SCRIPT_DIR</a></span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>*.rb</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_subs'>subs</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_f'>f</span><span class='op'>|</span> <span class='id identifier rubyid_require'>require</span> <span class='id identifier rubyid_f'>f</span> <span class='rbrace'>}</span>
+  <span class='id identifier rubyid_translators'>translators</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+  <span class='const'>ObjectSpace</span><span class='period'>.</span><span class='id identifier rubyid_each_object'>each_object</span><span class='lparen'>(</span><span class='const'>Class</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_select'>select</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_k'>k</span><span class='op'>|</span> <span class='id identifier rubyid_k'>k</span> <span class='op'>&lt;</span> <span class='kw'>self</span> <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_c'>c</span><span class='op'>|</span>
+    <span class='id identifier rubyid_translators'>translators</span><span class='lbracket'>[</span><span class='id identifier rubyid_c'>c</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_c'>c</span>
+  <span class='kw'>end</span>
+  <span class='id identifier rubyid_translators'>translators</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="add_translation-instance_method">
+  
+    #<strong>add_translation</strong>  &#x21d2; <tt>Object</tt>  <span class="extras">(protected)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Adds translation options to main tab of dialog.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+48
+49
+50
+51</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Ruby/translation.nuixscript/language_translation.rb', line 48</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_add_translation'>add_translation</span>
+  <span class='ivar'>@main_tab</span><span class='period'>.</span><span class='id identifier rubyid_appendComboBox'>appendComboBox</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>translation_language</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Language</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='ivar'>@langs</span><span class='period'>.</span><span class='id identifier rubyid_values'>values</span><span class='rparen'>)</span>
+  <span class='ivar'>@main_tab</span><span class='period'>.</span><span class='id identifier rubyid_appendComboBox'>appendComboBox</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>translation_annotate</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Operation</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='ivar'>@options</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="advance-instance_method">
+  
+    #<strong>advance</strong>(index, status)  &#x21d2; <tt>nil</tt>, <tt>true</tt>  <span class="extras">(protected)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Advances progress.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>index</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>index of item being processed</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>status</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>message for status/log</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>nil</tt>, <tt>true</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>nil if abort was requested, true otherwise</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Ruby/translation.nuixscript/language_translation.rb', line 58</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_advance'>advance</span><span class='lparen'>(</span><span class='id identifier rubyid_index'>index</span><span class='comma'>,</span> <span class='id identifier rubyid_status'>status</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='ivar'>@progress</span><span class='period'>.</span><span class='id identifier rubyid_abortWasRequested'>abortWasRequested</span>
+    <span class='ivar'>@progress</span><span class='period'>.</span><span class='id identifier rubyid_logMessage'>logMessage</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Aborting...</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+    <span class='kw'>return</span> <span class='kw'>nil</span>
+  <span class='kw'>end</span>
+
+  <span class='ivar'>@progress</span><span class='period'>.</span><span class='id identifier rubyid_setMainProgress'>setMainProgress</span><span class='lparen'>(</span><span class='id identifier rubyid_index'>index</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_frac'>frac</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_index'>index</span><span class='embexpr_end'>}</span><span class='tstring_content'>/</span><span class='embexpr_beg'>#{</span><span class='ivar'>@items</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='ivar'>@progress</span><span class='period'>.</span><span class='id identifier rubyid_setSubStatusAndLogIt'>setSubStatusAndLogIt</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>(</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_frac'>frac</span><span class='embexpr_end'>}</span><span class='tstring_content'>) </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_status'>status</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+  <span class='kw'>true</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_new_text-instance_method">
+  
+    #<strong>get_new_text</strong>(original, translated)  &#x21d2; <tt>String</tt>  <span class="extras">(protected)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns new text with translation appended.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>original</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>original text</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>translated</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>translated text</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>of new text</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+75
+76
+77</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Ruby/translation.nuixscript/language_translation.rb', line 75</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_new_text'>get_new_text</span><span class='lparen'>(</span><span class='id identifier rubyid_original'>original</span><span class='comma'>,</span> <span class='id identifier rubyid_translated'>translated</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_original'>original</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\n----------</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_translation_message'>translation_message</span><span class='embexpr_end'>}</span><span class='tstring_content'>----------\n</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id identifier rubyid_translated'>translated</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_original_text-instance_method">
+  
+    #<strong>get_original_text</strong>(item)  &#x21d2; <tt>String</tt>  <span class="extras">(protected)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns original text if it had been translated.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>item</span>
+      
+      
+        <span class='type'>(<tt>Item</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>of text, to the left of —Tran if matched</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+83
+84
+85
+86
+87
+88
+89</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Ruby/translation.nuixscript/language_translation.rb', line 83</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_original_text'>get_original_text</span><span class='lparen'>(</span><span class='id identifier rubyid_item'>item</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_text'>text</span> <span class='op'>=</span> <span class='id identifier rubyid_item'>item</span><span class='period'>.</span><span class='id identifier rubyid_getTextObject'>getTextObject</span><span class='period'>.</span><span class='id identifier rubyid_toString'>toString</span>
+  <span class='id identifier rubyid_mymatch'>mymatch</span> <span class='op'>=</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>(^.*?)\n---+Tran</span><span class='regexp_end'>/m</span></span><span class='period'>.</span><span class='id identifier rubyid_match'>match</span><span class='lparen'>(</span><span class='id identifier rubyid_text'>text</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='id identifier rubyid_mymatch'>mymatch</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span> <span class='kw'>unless</span> <span class='id identifier rubyid_mymatch'>mymatch</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+
+  <span class='id identifier rubyid_text'>text</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="progress_dialog-instance_method">
+  
+    #<strong>progress_dialog</strong>(progress, title)  &#x21d2; <tt>Object</tt>  <span class="extras">(protected)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Initializes progress dialog @progress.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>progress</span>
+      
+      
+        <span class='type'>(<tt>ProgressDialog</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>title</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+95
+96
+97
+98
+99
+100
+101
+102
+103</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Ruby/translation.nuixscript/language_translation.rb', line 95</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_progress_dialog'>progress_dialog</span><span class='lparen'>(</span><span class='id identifier rubyid_progress'>progress</span><span class='comma'>,</span> <span class='id identifier rubyid_title'>title</span><span class='rparen'>)</span>
+  <span class='ivar'>@progress</span> <span class='op'>=</span> <span class='id identifier rubyid_progress'>progress</span>
+  <span class='ivar'>@progress</span><span class='period'>.</span><span class='id identifier rubyid_setTitle'>setTitle</span><span class='lparen'>(</span><span class='id identifier rubyid_title'>title</span><span class='rparen'>)</span>
+  <span class='ivar'>@progress</span><span class='period'>.</span><span class='id identifier rubyid_setTimestampLoggedMessages'>setTimestampLoggedMessages</span><span class='lparen'>(</span><span class='kw'>true</span><span class='rparen'>)</span>
+  <span class='ivar'>@progress</span><span class='period'>.</span><span class='id identifier rubyid_setMainStatusAndLogIt'>setMainStatusAndLogIt</span><span class='lparen'>(</span><span class='id identifier rubyid_title'>title</span><span class='rparen'>)</span>
+  <span class='ivar'>@progress</span><span class='period'>.</span><span class='id identifier rubyid_setMainProgress'>setMainProgress</span><span class='lparen'>(</span><span class='int'>0</span><span class='comma'>,</span> <span class='ivar'>@items</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span><span class='rparen'>)</span>
+  <span class='ivar'>@progress</span><span class='period'>.</span><span class='id identifier rubyid_setMainProgressVisible'>setMainProgressVisible</span><span class='lparen'>(</span><span class='kw'>true</span><span class='rparen'>)</span>
+  <span class='ivar'>@progress</span><span class='period'>.</span><span class='id identifier rubyid_setSubProgressVisible'>setSubProgressVisible</span><span class='lparen'>(</span><span class='kw'>false</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="run-instance_method">
+  
+    #<strong>run</strong>(items)  &#x21d2; <tt>Object</tt>  <span class="extras">(protected)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Shows dialog and updates @settings with input results.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>items</span>
+      
+      
+        <span class='type'>(<tt>Set&lt;Item&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+108
+109
+110
+111
+112
+113
+114
+115
+116</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Ruby/translation.nuixscript/language_translation.rb', line 108</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_run'>run</span><span class='lparen'>(</span><span class='id identifier rubyid_items'>items</span><span class='rparen'>)</span>
+  <span class='ivar'>@items</span> <span class='op'>=</span> <span class='id identifier rubyid_items'>items</span>
+  <span class='kw'>return</span> <span class='kw'>nil</span> <span class='kw'>if</span> <span class='ivar'>@input</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+
+  <span class='ivar'>@input</span><span class='period'>.</span><span class='id identifier rubyid_display'>display</span>
+  <span class='kw'>return</span> <span class='kw'>nil</span> <span class='kw'>unless</span> <span class='ivar'>@input</span><span class='period'>.</span><span class='id identifier rubyid_getDialogResult'>getDialogResult</span>
+
+  <span class='ivar'>@settings</span> <span class='op'>=</span> <span class='ivar'>@input</span><span class='period'>.</span><span class='id identifier rubyid_toMap'>toMap</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="translate-instance_method">
+  
+    #<strong>translate</strong>(item, translated)  &#x21d2; <tt>Object</tt>  <span class="extras">(protected)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Updates item with translation.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>item</span>
+      
+      
+        <span class='type'>(<tt>Item</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the item to update</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>translated</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the translated text</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Ruby/translation.nuixscript/language_translation.rb', line 122</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_translate'>translate</span><span class='lparen'>(</span><span class='id identifier rubyid_item'>item</span><span class='comma'>,</span> <span class='id identifier rubyid_translated'>translated</span><span class='rparen'>)</span>
+  <span class='kw'>case</span> <span class='ivar'>@settings</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>translation_annotate</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+  <span class='kw'>when</span> <span class='ivar'>@options</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span> <span class='comment'># Append Text
+</span>    <span class='id identifier rubyid_new_text'>new_text</span> <span class='op'>=</span> <span class='id identifier rubyid_get_new_text'>get_new_text</span><span class='lparen'>(</span><span class='id identifier rubyid_item'>item</span><span class='period'>.</span><span class='id identifier rubyid_getTextObject'>getTextObject</span><span class='period'>.</span><span class='id identifier rubyid_toString'>toString</span><span class='comma'>,</span> <span class='id identifier rubyid_translated'>translated</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_item'>item</span><span class='period'>.</span><span class='id identifier rubyid_modify'>modify</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_m'>m</span><span class='op'>|</span> <span class='id identifier rubyid_m'>m</span><span class='period'>.</span><span class='id identifier rubyid_replace_text'>replace_text</span><span class='lparen'>(</span><span class='id identifier rubyid_new_text'>new_text</span><span class='rparen'>)</span> <span class='rbrace'>}</span>
+  <span class='kw'>when</span> <span class='ivar'>@options</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span> <span class='comment'># Add Custom Metadata
+</span>    <span class='id identifier rubyid_field_name'>field_name</span> <span class='op'>=</span> <span class='id identifier rubyid_translation_message'>translation_message</span>
+    <span class='id identifier rubyid_item'>item</span><span class='period'>.</span><span class='id identifier rubyid_getCustomMetadata'>getCustomMetadata</span><span class='period'>.</span><span class='id identifier rubyid_putText'>putText</span><span class='lparen'>(</span><span class='id identifier rubyid_field_name'>field_name</span><span class='comma'>,</span> <span class='id identifier rubyid_translated'>translated</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="translation_message-instance_method">
+  
+    #<strong>translation_message</strong>  &#x21d2; <tt>String</tt>  <span class="extras">(private)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The translation message.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+138
+139
+140</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Ruby/translation.nuixscript/language_translation.rb', line 138</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_translation_message'>translation_message</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Translation to </span><span class='embexpr_beg'>#{</span><span class='ivar'>@settings</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>translation_language</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Tue Feb 26 23:14:07 2019 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.16 (ruby-2.3.3).
+</div>
+
+    </div>
+  </body>
+</html>

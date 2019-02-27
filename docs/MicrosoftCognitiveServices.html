@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: MicrosoftCognitiveServices
+  
+    &mdash; Documentation by YARD 0.9.16
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "MicrosoftCognitiveServices";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index (M)</a> &raquo;
+    
+    
+    <span class="title">MicrosoftCognitiveServices</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: MicrosoftCognitiveServices
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName"><span class='object_link'><a href="NuixTranslator.html" title="NuixTranslator (class)">NuixTranslator</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next"><span class='object_link'><a href="NuixTranslator.html" title="NuixTranslator (class)">NuixTranslator</a></span></li>
+          
+            <li class="next">MicrosoftCognitiveServices</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>Ruby/translation.nuixscript/Translators/microsoft_cognitive_services.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Class for translating items using Microsoft Cognitive Services.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+  
+    <h2>
+      Constant Summary
+      <small><a href="#" class="constants_summary_toggle">collapse</a></small>
+    </h2>
+
+    <dl class="constants">
+      
+        <dt id="NAME-constant" class="">NAME =
+          
+        </dt>
+        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Microsoft Cognitive Services</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
+      
+        <dt id="LANGUAGES-constant" class="">LANGUAGES =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbrace'>{</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>af</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Afrikaans</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>ar</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Arabic</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>bn</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Bangla</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>bs</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Bosnian (Latin)</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>bg</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Bulgarian</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>yue</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Cantonese (Traditional)</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>ca</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Catalan</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>zh-Hans</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Chinese Simplified</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>zh-Hant</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Chinese Traditional</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>hr</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Croatian</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>cs</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Czech</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>da</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Danish</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>nl</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Dutch</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>en</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>English</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>et</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Estonian</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>fj</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Fijian</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>fil</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Filipino</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>fi</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Finnish</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>fr</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>French</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>de</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>German</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>el</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Greek</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>ht</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Haitian Creole</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>he</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Hebrew</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>hi</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Hindi</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>mww</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Hmong Daw</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>hu</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Hungarian</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>is</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Icelandic</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>id</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Indonesian</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>it</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Italian</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>ja</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Japanese</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>sw</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Kiswahili</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>tlh</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Klingon</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>tlh-Qaak</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Klingon (plqaD)</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>ko</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Korean</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>lv</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Latvian</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>lt</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Lithuanian</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>mg</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Malagasy</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>ms</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Malay</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>mt</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Maltese</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>nb</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Norwegian</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>fa</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Persian</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>pl</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Polish</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>pt</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Portuguese</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>otq</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Queretaro Otomi</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>ro</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Romanian</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>ru</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Russian</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>sm</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Samoan</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>sr-Cyrl</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Serbian (Cyrillic)</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>sr-Latn</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Serbian (Latin)</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>sk</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Slovak</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>sl</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Slovenian</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>es</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Spanish</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>sv</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Swedish</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>ty</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Tahitian</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>ta</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Tamil</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>te</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Telugu</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>th</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Thai</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>to</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Tongan</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>tr</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Turkish</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>uk</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Ukrainian</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>ur</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Urdu</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>vi</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Vietnamese</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>cy</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Welsh</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>yua</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span>	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Yucatec Maya</span><span class='tstring_end'>&#39;</span></span> <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
+      
+    </dl>
+  
+
+
+
+  
+  
+  <h3 class="inherited">Constants inherited
+     from <span class='object_link'><a href="NuixTranslator.html" title="NuixTranslator (class)">NuixTranslator</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="NuixTranslator.html#SCRIPT_DIR-constant" title="NuixTranslator::SCRIPT_DIR (constant)">NuixTranslator::SCRIPT_DIR</a></span></p>
+
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#name-class_method" title="name (class method)">.<strong>name</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>  &#x21d2; MicrosoftCognitiveServices </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Creates a new NuixTranslator using Microsoft Cognitive Services API.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#ms_translate-instance_method" title="#ms_translate (instance method)">#<strong>ms_translate</strong>(text)  &#x21d2; String<sup>?</sup> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Translates text using Microsoft Cognitive Services.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#progress_dialog-instance_method" title="#progress_dialog (instance method)">#<strong>progress_dialog</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Progress dialog loop for processing items.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#response_body-instance_method" title="#response_body (instance method)">#<strong>response_body</strong>(response)  &#x21d2; String<sup>?</sup> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Handles response from Net::HTTPSuccess.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#run-instance_method" title="#run (instance method)">#<strong>run</strong>(items)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Runs Translator on the items.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#translate-instance_method" title="#translate (instance method)">#<strong>translate</strong>(item)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Translates item using Microsoft Cognitive Services.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#validate_input-instance_method" title="#validate_input (instance method)">#<strong>validate_input</strong>(values)  &#x21d2; true, false </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Validation function for input.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="NuixTranslator.html" title="NuixTranslator (class)">NuixTranslator</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="NuixTranslator.html#add_translation-instance_method" title="NuixTranslator#add_translation (method)">#add_translation</a></span>, <span class='object_link'><a href="NuixTranslator.html#advance-instance_method" title="NuixTranslator#advance (method)">#advance</a></span>, <span class='object_link'><a href="NuixTranslator.html#get_new_text-instance_method" title="NuixTranslator#get_new_text (method)">#get_new_text</a></span>, <span class='object_link'><a href="NuixTranslator.html#get_original_text-instance_method" title="NuixTranslator#get_original_text (method)">#get_original_text</a></span>, <span class='object_link'><a href="NuixTranslator.html#translation_message-instance_method" title="NuixTranslator#translation_message (method)">#translation_message</a></span>, <span class='object_link'><a href="NuixTranslator.html#translators-class_method" title="NuixTranslator.translators (method)">translators</a></span></p>
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    #<strong>initialize</strong>  &#x21d2; <tt><span class='object_link'><a href="" title="MicrosoftCognitiveServices (class)">MicrosoftCognitiveServices</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Creates a new NuixTranslator using Microsoft Cognitive Services API.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+78
+79
+80
+81
+82
+83
+84</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Ruby/translation.nuixscript/Translators/microsoft_cognitive_services.rb', line 78</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="#NAME-constant" title="MicrosoftCognitiveServices::NAME (constant)">NAME</a></span></span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="#LANGUAGES-constant" title="MicrosoftCognitiveServices::LANGUAGES (constant)">LANGUAGES</a></span></span><span class='rparen'>)</span>
+  <span class='ivar'>@main_tab</span><span class='period'>.</span><span class='id identifier rubyid_appendTextField'>appendTextField</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>api_key</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>API Key</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='comment'># load langs from CSV?
+</span>  <span class='id identifier rubyid_add_translation'>add_translation</span>
+  <span class='ivar'>@input</span><span class='period'>.</span><span class='id identifier rubyid_validateBeforeClosing'>validateBeforeClosing</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_v'>v</span><span class='op'>|</span> <span class='id identifier rubyid_validate_input'>validate_input</span><span class='lparen'>(</span><span class='id identifier rubyid_v'>v</span><span class='rparen'>)</span> <span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="name-class_method">
+  
+    .<strong>name</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+8
+9
+10</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Ruby/translation.nuixscript/Translators/microsoft_cognitive_services.rb', line 8</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span>
+  <span class='const'><span class='object_link'><a href="#NAME-constant" title="MicrosoftCognitiveServices::NAME (constant)">NAME</a></span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="ms_translate-instance_method">
+  
+    #<strong>ms_translate</strong>(text)  &#x21d2; <tt>String</tt><sup>?</sup>  <span class="extras">(private)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Translates text using Microsoft Cognitive Services.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>text</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>original text</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>, <tt>nil</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>translated text, or nil if there was an error</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Ruby/translation.nuixscript/Translators/microsoft_cognitive_services.rb', line 105</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_ms_translate'>ms_translate</span><span class='lparen'>(</span><span class='id identifier rubyid_text'>text</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_https'>https</span> <span class='op'>=</span> <span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='ivar'>@uri</span><span class='period'>.</span><span class='id identifier rubyid_host'>host</span><span class='comma'>,</span> <span class='ivar'>@uri</span><span class='period'>.</span><span class='id identifier rubyid_port'>port</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_https'>https</span><span class='period'>.</span><span class='id identifier rubyid_use_ssl'>use_ssl</span> <span class='op'>=</span> <span class='kw'>true</span>
+  <span class='kw'>begin</span>
+    <span class='id identifier rubyid_req'>req</span> <span class='op'>=</span> <span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTP</span><span class='op'>::</span><span class='const'>Post</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='ivar'>@uri</span><span class='period'>.</span><span class='id identifier rubyid_request_uri'>request_uri</span><span class='comma'>,</span> <span class='ivar'>@headers</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_req'>req</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='lbrace'>{</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Text</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_text'>text</span> <span class='rbrace'>}</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_json'>to_json</span>
+    <span class='id identifier rubyid_response'>response</span> <span class='op'>=</span> <span class='id identifier rubyid_https'>https</span><span class='period'>.</span><span class='id identifier rubyid_request'>request</span><span class='lparen'>(</span><span class='id identifier rubyid_req'>req</span><span class='rparen'>)</span>
+    <span class='kw'>return</span> <span class='id identifier rubyid_response_body'>response_body</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+  <span class='kw'>rescue</span> <span class='const'>StandardError</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_ex'>ex</span>
+    <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ERROR: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_ex'>ex</span><span class='period'>.</span><span class='id identifier rubyid_message'>message</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="progress_dialog-instance_method">
+  
+    #<strong>progress_dialog</strong>  &#x21d2; <tt>Object</tt>  <span class="extras">(private)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Progress dialog loop for processing items.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Ruby/translation.nuixscript/Translators/microsoft_cognitive_services.rb', line 119</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_progress_dialog'>progress_dialog</span>
+  <span class='const'>ProgressDialog</span><span class='period'>.</span><span class='id identifier rubyid_forBlock'>forBlock</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_pd'>pd</span><span class='op'>|</span>
+    <span class='kw'>super</span><span class='lparen'>(</span><span class='id identifier rubyid_pd'>pd</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Translating</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+    <span class='gvar'>$current_case</span><span class='period'>.</span><span class='id identifier rubyid_with_write_access'>with_write_access</span> <span class='kw'>do</span>
+      <span class='ivar'>@items</span><span class='period'>.</span><span class='id identifier rubyid_each_with_index'>each_with_index</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_item'>item</span><span class='comma'>,</span> <span class='id identifier rubyid_index'>index</span><span class='op'>|</span>
+        <span class='kw'>break</span> <span class='kw'>if</span> <span class='id identifier rubyid_advance'>advance</span><span class='lparen'>(</span><span class='id identifier rubyid_index'>index</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Item GUID: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_item'>item</span><span class='period'>.</span><span class='id identifier rubyid_getGuid'>getGuid</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+
+        <span class='id identifier rubyid_translate'>translate</span><span class='lparen'>(</span><span class='id identifier rubyid_item'>item</span><span class='rparen'>)</span>
+      <span class='kw'>end</span>
+    <span class='kw'>end</span>
+    <span class='id identifier rubyid_pd'>pd</span><span class='period'>.</span><span class='id identifier rubyid_setCompleted'>setCompleted</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="response_body-instance_method">
+  
+    #<strong>response_body</strong>(response)  &#x21d2; <tt>String</tt><sup>?</sup>  <span class="extras">(private)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Handles response from Net::HTTPSuccess</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>response</span>
+      
+      
+        <span class='type'>(<tt>Net::HTTPResponse</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>from Microsoft Cognitive Services</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>, <tt>nil</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>translated text, or nil if an error occured</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Ruby/translation.nuixscript/Translators/microsoft_cognitive_services.rb', line 137</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_response_body'>response_body</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span>
+  <span class='kw'>case</span> <span class='id identifier rubyid_response'>response</span>
+  <span class='kw'>when</span> <span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTPSuccess</span>
+    <span class='kw'>return</span> <span class='const'>JSON</span><span class='period'>.</span><span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span><span class='rparen'>)</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>translations</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>text</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+  <span class='kw'>when</span> <span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTPUnauthorized</span>
+    <span class='id identifier rubyid_msg'>msg</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>invalid API key?</span><span class='tstring_end'>&#39;</span></span>
+  <span class='kw'>when</span> <span class='const'>Net</span><span class='op'>::</span><span class='const'>HTTPServerError</span>
+    <span class='id identifier rubyid_msg'>msg</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>try again later?</span><span class='tstring_end'>&#39;</span></span>
+  <span class='kw'>end</span>
+  <span class='ivar'>@progress</span><span class='period'>.</span><span class='id identifier rubyid_logMessage'>logMessage</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ERROR: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_response'>response</span><span class='period'>.</span><span class='id identifier rubyid_message'>message</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+  <span class='ivar'>@progress</span><span class='period'>.</span><span class='id identifier rubyid_logMessage'>logMessage</span><span class='lparen'>(</span><span class='id identifier rubyid_msg'>msg</span><span class='rparen'>)</span> <span class='kw'>unless</span> <span class='id identifier rubyid_msg'>msg</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="run-instance_method">
+  
+    #<strong>run</strong>(items)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Runs Translator on the items.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>items</span>
+      
+      
+        <span class='type'>(<tt>Set&lt;Item&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+89
+90
+91
+92
+93
+94
+95
+96
+97</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Ruby/translation.nuixscript/Translators/microsoft_cognitive_services.rb', line 89</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_run'>run</span><span class='lparen'>(</span><span class='id identifier rubyid_items'>items</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='kw'>nil</span> <span class='kw'>if</span> <span class='kw'>super</span><span class='lparen'>(</span><span class='id identifier rubyid_items'>items</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>https://api.cognitive.microsofttranslator.com/translate?api-version=3.0&amp;to=</span><span class='tstring_end'>&#39;</span></span>
+  <span class='ivar'>@uri</span> <span class='op'>=</span> <span class='const'>URI</span><span class='period'>.</span><span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span> <span class='op'>+</span> <span class='ivar'>@langs</span><span class='period'>.</span><span class='id identifier rubyid_key'>key</span><span class='lparen'>(</span><span class='ivar'>@settings</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>translation_language</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='rparen'>)</span>
+  <span class='ivar'>@headers</span> <span class='op'>=</span> <span class='lbrace'>{</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Ocp-Apim-Subscription-Key</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='ivar'>@settings</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>api_key</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+  <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Content-Type</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Accept</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_k'>k</span><span class='op'>|</span> <span class='ivar'>@headers</span><span class='lbracket'>[</span><span class='id identifier rubyid_k'>k</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>application/json</span><span class='tstring_end'>&#39;</span></span> <span class='rbrace'>}</span>
+  <span class='id identifier rubyid_progress_dialog'>progress_dialog</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="translate-instance_method">
+  
+    #<strong>translate</strong>(item)  &#x21d2; <tt>Object</tt>  <span class="extras">(private)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Translates item using Microsoft Cognitive Services.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>item</span>
+      
+      
+        <span class='type'>(<tt>Item</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a Nuix item</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+153
+154
+155
+156
+157
+158
+159
+160</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Ruby/translation.nuixscript/Translators/microsoft_cognitive_services.rb', line 153</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_translate'>translate</span><span class='lparen'>(</span><span class='id identifier rubyid_item'>item</span><span class='rparen'>)</span>
+  <span class='ivar'>@progress</span><span class='period'>.</span><span class='id identifier rubyid_setMainStatusAndLogIt'>setMainStatusAndLogIt</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Translating</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_text'>text</span> <span class='op'>=</span> <span class='id identifier rubyid_get_original_text'>get_original_text</span><span class='lparen'>(</span><span class='id identifier rubyid_item'>item</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='kw'>nil</span> <span class='kw'>if</span> <span class='id identifier rubyid_text'>text</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span>
+
+  <span class='id identifier rubyid_translated'>translated</span> <span class='op'>=</span> <span class='id identifier rubyid_ms_translate'>ms_translate</span><span class='lparen'>(</span><span class='id identifier rubyid_text'>text</span><span class='rparen'>)</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id identifier rubyid_item'>item</span><span class='comma'>,</span> <span class='id identifier rubyid_translated'>translated</span><span class='rparen'>)</span> <span class='kw'>unless</span> <span class='id identifier rubyid_translated'>translated</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>||</span> <span class='id identifier rubyid_translated'>translated</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="validate_input-instance_method">
+  
+    #<strong>validate_input</strong>(values)  &#x21d2; <tt>true</tt>, <tt>false</tt>  <span class="extras">(private)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Validation function for input.</p>
+
+<pre class="code ruby"><code class="ruby">Checks for API key.</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>values</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>input values</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>true</tt>, <tt>false</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>if in validate state</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+167
+168
+169
+170
+171
+172</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Ruby/translation.nuixscript/Translators/microsoft_cognitive_services.rb', line 167</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_validate_input'>validate_input</span><span class='lparen'>(</span><span class='id identifier rubyid_values'>values</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='kw'>true</span> <span class='kw'>unless</span> <span class='id identifier rubyid_values'>values</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>api_key</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_strip'>strip</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span>
+
+  <span class='const'>CommonDialogs</span><span class='period'>.</span><span class='id identifier rubyid_showWarning'>showWarning</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Please provide a </span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="#NAME-constant" title="MicrosoftCognitiveServices::NAME (constant)">NAME</a></span></span><span class='embexpr_end'>}</span><span class='tstring_content'> API Key.</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+  <span class='kw'>false</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Tue Feb 26 23:14:07 2019 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.16 (ruby-2.3.3).
+</div>
+
+    </div>
+  </body>
+</html>

@@ -1,6 +1,6 @@
 # Class for clearing translations from text.
 class ClearTranslations < NuixTranslator
-  NAME = 'Clear Transactions'.freeze
+  NAME = 'Clear Translations'.freeze
 
   def self.name
     NAME

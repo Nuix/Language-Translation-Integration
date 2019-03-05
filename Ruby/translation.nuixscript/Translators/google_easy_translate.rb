@@ -42,7 +42,7 @@ class GoogleEasyTranslate < NuixTranslator
     @main_tab.appendTextField('custom_metadata_field_name', 'Custom Metadata Field Name', 'Detected Language')
     @main_tab.enabledOnlyWhenChecked('custom_metadata_field_name', 'apply_custom_metadata')
     @main_tab.appendCheckBox('tag_items', 'Tag items with detected language?', false)
-    @main_tab.appendTextField('top_level_tag', 'Top-level tag', 'Detected Languages')
+    @main_tab.appendTextField('top_level_tag', 'Tag Name', 'Detected Languages')
     @main_tab.enabledOnlyWhenChecked('top_level_tag', 'tag_items')
   end
 

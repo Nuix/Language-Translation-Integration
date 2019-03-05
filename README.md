@@ -48,28 +48,35 @@ The script requires a case be opened and items are selected. Once you have selec
 The script uses sticky settings which are kept within the script's directory. Each `NuixTranslator` will have its own sticky settings, and settings can be saved/loaded through JSON.
 
 ## The `NuixTranslator` Class
-The `NuixTranslator` class is the base class for presenting a settings dialog and progress dialog as it runs through the current selected items. Translated text can be appended to an item's original text or added to the item as custom metadata.
+`NuixTranslator` is the base class, for initializing settings and progress dialogs as it runs through the current selected items. It contains methods for getting an item's original text, appending translated text, or adding translations as custom metadata.
 
-New options can be implemented by creating new `NuixTranslator` subclasses. Each class defines a constant `NAME` string representing the translation option (used when showing dialogs), and a public method `.run(items)` to get the input settings and iterate over the selected items. The script uses introspection to locate all the classes which derive from `NuixTranslator`, so there is no extra work that needs to be done to make script aware of your `NuixTranslator` except make sure the class file is placed in the script's sub-directory "Translators".
+Translation options are implemented as `NuixTranslator` subclasses, each defining a constant `NAME` string for itself (mostly used when showing dialogs), and a public method `.run(items)` to get the input settings and iterate over the selected items.
 
-### Translation Options
+New translation options can be added by creating a `NuxiTranslator` subclass .rb file in the script's "Translators" subdirectory.
+
+### Common Translation Settings
 
 - *Language* - The translation target language.
 - *Operation* - Append Text or Add Custom Metadata.
-  - Append Text will use the separator: "\n----------Translation to <Language>---------\n"
+  - Append Text will use the separator: `\n----------Translation to <Language>---------\n`
   - Add Custom Metadata will use the field name "Translation to <Language>"
-  
-## `NuixTranslator` Subclasses
 
-## Google Cloud Translation
+## Translation Options
+### Google Cloud Translation
 Uses Google Cloud Translation through the EasyTranslate gem.
 
 Adds the ability to detect an item's language, annotating the item's language as a tag or custom metadata.
 
-## Microsoft Cognitive Services
+#### Detection Settings
+- *Apply detected language as custom metadata*
+  - *Custom Metadata Field Name* - Custom metadata field name to use
+- *Tag items with detected language?*
+  - *Tag Name* - Applied tag will be "<Tag Name>|<Detected Language>"
+
+### Microsoft Cognitive Services
 Uses the Microsoft Translator Text API.
 
-## Clear Translations
+### Clear Translations
 Removes translation text from selected items, obtaining an item's original text using methods from `NuixTranslator`.
 
 # Cloning this Repository

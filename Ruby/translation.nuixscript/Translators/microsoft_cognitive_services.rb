@@ -77,6 +77,7 @@ class MicrosoftCognitiveServices < NuixTranslator
   # Creates a new NuixTranslator using Microsoft Cognitive Services API.
   def initialize
     super(NAME, LANGUAGES)
+	@input.setSize(500,250)
     @main_tab.appendTextField('api_key', 'API Key', '')
     # load langs from CSV?
     add_translation

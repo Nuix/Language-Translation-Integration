@@ -5,6 +5,8 @@ Language Translation Integration
 
 View the GitHub project [here](https://github.com/Nuix/Language-Translation-Integration) or download the latest release [here](https://github.com/Nuix/Language-Translation-Integration/releases).
 
+View the Java Docs [here](https://nuix.github.io/Language-Translation-Integration/).
+
 # Overview
 
 The Language Translation Integration project integrates with third-party translation services like Google Cloud Translation or Microsoft Cognitive Services. Translated text can be added as custom metadata, or appended to (or cleared from) an item's text.
@@ -43,7 +45,11 @@ You will need a key for Microsoft's Translator Text API. This can be obtained by
 4. Once created the API key is accessible from the console.
 
 # Running the Script
-The script requires a case be opened and items are selected. Once you have selected items and started the script, an input dialog will prompt the user to select from the available `NuixTranslator` options. The selected `NuixTranslator` will prompt for settings (if required) and present a progress dialog as it runs through the current selected items.
+The script requires a case be opened and items are selected.
+
+![image](https://user-images.githubusercontent.com/22751246/54239011-5d51ea00-44f0-11e9-81e3-89c1ef79a42e.png)
+
+Once you have selected items and started the script, an input dialog will prompt the user to select from the available `NuixTranslator` options. The selected `NuixTranslator` will prompt for settings (if required) and present a progress dialog as it runs through the current selected items.
 
 The script uses sticky settings which are kept within the script's directory. Each `NuixTranslator` will have its own sticky settings, and settings can be saved/loaded through JSON.
 
@@ -59,10 +65,15 @@ New translation options can be added by creating a `NuxiTranslator` subclass .rb
 - *Language* - The translation target language.
 - *Operation* - Append Text or Add Custom Metadata.
   - Append Text will use the separator: `\n----------Translation to <Language>---------\n`
-  - Add Custom Metadata will use the field name "Translation to <Language>"
+  ![image](https://user-images.githubusercontent.com/22751246/54239317-41027d00-44f1-11e9-8519-73fd5c627643.png)
+  - Add Custom Metadata will use the field name `Translation to <Language>`
+  ![image](https://user-images.githubusercontent.com/22751246/54239393-71e2b200-44f1-11e9-9ee5-4f0e6070e7ee.png)
 
 ## Translation Options
 ### Google Cloud Translation
+
+![image](https://user-images.githubusercontent.com/22751246/54239180-d5b8ab00-44f0-11e9-9a1f-e9548cfbed07.png)
+
 Uses Google Cloud Translation through the EasyTranslate gem.
 
 Adds the ability to detect an item's language, annotating the item's language as a tag or custom metadata.
@@ -71,9 +82,12 @@ Adds the ability to detect an item's language, annotating the item's language as
 - *Apply detected language as custom metadata*
   - *Custom Metadata Field Name* - Custom metadata field name to use
 - *Tag items with detected language?*
-  - *Tag Name* - Applied tag will be "<Tag Name>|<Detected Language>"
+  - *Tag Name* - Applied tag will be `<Tag Name>|<Detected Language>`
 
 ### Microsoft Cognitive Services
+
+![image](https://user-images.githubusercontent.com/22751246/54239118-a4d87600-44f0-11e9-999b-7f6bcc256f3e.png)
+
 Uses the Microsoft Translator Text API.
 
 ### Clear Translations

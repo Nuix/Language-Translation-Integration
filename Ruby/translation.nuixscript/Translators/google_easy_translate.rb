@@ -16,6 +16,7 @@ class GoogleEasyTranslate < NuixTranslator
   # Creates a new NuixTranslator using EasyTranslate gem.
   def initialize
     super(NAME, languages)
+	@input.setSize(500,500)
     @main_tab.appendTextField('api_key', 'API Key', '')
     add_detection
     add_translation

@@ -62,7 +62,7 @@ class GoogleEasyTranslate < NuixTranslator
   def detect(item)
     @progress.setMainStatusAndLogIt('Detecting Language')
     lang = detect_language(get_original_text(item))
-    return nil if lang.nil
+    return nil if lang.nil?
 
     language = "#{@langs[lang]} (#{lang})"
     item.getCustomMetadata.putText(@settings['custom_metadata_field_name'], language) if @settings['apply_custom_metadata']

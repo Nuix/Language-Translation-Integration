@@ -1,7 +1,7 @@
 Language Translation Integration
 ==============
 
-![This script was last tested in Nuix 7.8](https://img.shields.io/badge/Script%20Tested%20in%20Nuix-7.8-green.svg)
+![This script was last tested in Nuix 9.0](https://img.shields.io/badge/Script%20Tested%20in%20Nuix-9.0-green.svg)
 
 View the GitHub project [here](https://github.com/Nuix/Language-Translation-Integration) or download the latest release [here](https://github.com/Nuix/Language-Translation-Integration/releases).
 
@@ -19,6 +19,10 @@ Begin by downloading the latest release of this code.  Extract the contents of t
 
 - `%appdata%\Nuix\Scripts` - User level script directory
 - `%programdata%\Nuix\Scripts` - System level script directory
+
+## Prerequisites for LibreTranslate
+
+This translator makes use of the [LibreTranslate](https://github.com/uav4geo/LibreTranslate) project.  LibreTranslate provides a translation server which can be ran locally.  You will need to [install and run the LibreTranslate server](https://github.com/uav4geo/LibreTranslate#install-and-run).
 
 ## Prerequisites for Google Cloud Translation
 ### Google Cloud Translation API Access
@@ -89,6 +93,14 @@ Adds the ability to detect an item's language, annotating the item's language as
 ![image](https://user-images.githubusercontent.com/22751246/54239118-a4d87600-44f0-11e9-999b-7f6bcc256f3e.png)
 
 Uses the Microsoft Translator Text API.
+
+### LibreTranslate
+
+Once you have installed the LibreTranslate server and have it running, open a Nuix case, select the items you would like to translate and run the script.  When prompted, select the choice **Libre Translate**.
+
+If you have your LibreTranslate server running on `localhost` and port `5000` then for **API URL** you will provide the value `http://localhost:5000/translate`.  Then choose the source language, translation destination language and other options.
+
+Special thanks to @Trekky12 for [contributing](https://github.com/Nuix/Language-Translation-Integration/pull/2) the LibreTranslate connector!
 
 ### Clear Translations
 Removes translation text from selected items, obtaining an item's original text using methods from `NuixTranslator`.

@@ -1,5 +1,6 @@
 require 'uri'
 require 'net/http'
+require 'json'
 
 # Class for translating items using Libre Translate API
 class LibreTranslate < NuixTranslator

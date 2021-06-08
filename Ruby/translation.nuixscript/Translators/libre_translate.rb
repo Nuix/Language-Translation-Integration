@@ -26,7 +26,7 @@ class LibreTranslate < NuixTranslator
   # Creates a new NuixTranslator using Libre Translate API.
   def initialize
     super(NAME, LANGUAGES)
-	@input.setSize(500,350)
+	@input.setSize(500,400)
     @main_tab.appendTextField('api_url', 'API URL', '')
     add_translation_options
     add_translation
@@ -34,14 +34,14 @@ class LibreTranslate < NuixTranslator
     @input.validateBeforeClosing { |v| validate_input(v) }
   end
 
-  # Adds source language option to main tab of dialog.
-  def add_translation_from
-    
-  end
-
   def add_translation_tagging
     @main_tab.appendCheckBox('tag_items_success', 'Tag items which are successfully translated?', false)
+    @main_tab.appendTextField('tag_name_success', 'Tag Name', 'Translations|success')
+    @main_tab.enabledOnlyWhenChecked('tag_name_success', 'tag_items_success')
+
     @main_tab.appendCheckBox('tag_items_failure', 'Tag items which couldn\'t be translated?', false)
+    @main_tab.appendTextField('tag_name_failure', 'Tag Name', 'Translations|failure')
+    @main_tab.enabledOnlyWhenChecked('tag_name_failure', 'tag_items_failure')
   end
 
   def add_translation_options
@@ -123,17 +123,21 @@ class LibreTranslate < NuixTranslator
     text = get_original_text(item)
     return nil if text.empty?
 
-    item.removeTag("Translations|failure")
-    item.removeTag("Translations|success")
+    if @settings['tag_items_success'] 
+      item.removeTag("#{@settings['tag_name_success']}")
+    end
+    if @settings['tag_items_failure'] 
+      item.removeTag("#{@settings['tag_name_failure']}")
+    end
 
     translated = libre_translate(text)
     if translated.nil?
-      item.addTag("Translations|failure") if @settings['tag_items_failure']
+      item.addTag("#{@settings['tag_name_failure']}") if @settings['tag_items_failure']
       @progress.logMessage("No response received! Please try again later")
       return nil 
     end
 
-    item.addTag("Translations|success")
+    item.addTag("#{@settings['tag_name_success']}") if @settings['tag_items_success']
 
     super(item, translated) unless translated.nil? || translated.empty?
   end
@@ -148,5 +152,12 @@ class LibreTranslate < NuixTranslator
 
     CommonDialogs.showWarning("Please provide a #{NAME} API URL.")
     false
+  end
+
+  # The translation message.
+  #
+  # @return [String]
+  def translation_message
+    "Translation with libretranslate to #{@settings['translation_language']}"
   end
 end

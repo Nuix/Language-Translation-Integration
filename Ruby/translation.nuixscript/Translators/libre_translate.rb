@@ -11,16 +11,44 @@ class LibreTranslate < NuixTranslator
 
   
   LANGUAGES = { 
-                'ar' =>	'Arabic',
-                'en' =>	'English',
-                'zh' =>	'Chinese',
-                'fr' =>	'French',
-                'de' =>	'German',
-                'it' =>	'Italian',
-                'pt' =>	'Portuguese',
-                'ru' =>	'Russian',
-                'es' =>	'Spanish'
-                 }.freeze
+    'auto' => 'Auto',
+    'en' => 'English',
+    'sq' => 'Albanian',
+    'ar' => 'Arabic',
+    'az' => 'Azerbaijani',
+    'zh' => 'Chinese',
+    'cs' => 'Czech',
+    'da' => 'Danish',
+    'nl' => 'Dutch',
+    'eo' => 'Esperanto',
+    'fi' => 'Finnish',
+    'fr' => 'French',
+    'gl' => 'Galician',
+    'de' => 'German',
+    'el' => 'Greek',
+    'he' => 'Hebrew',
+    'hi' => 'Hindi',
+    'hu' => 'Hungarian',
+    'id' => 'Indonesian',
+    'ga' => 'Irish',
+    'it' => 'Italian',
+    'ja' => 'Japanese',
+    'kab' => 'Kabyle',
+    'ko' => 'Korean',
+    'nb' => 'Norwegian Bokmål',
+    'oc' => 'Occitan',
+    'fa' => 'Persian',
+    'pl' => 'Polish',
+    'pt' => 'Portuguese',
+    'ru' => 'Russian',
+    'sk' => 'Slovak',
+    'es' => 'Spanish',
+    'sv' => 'Swedish',
+    'zgh' => 'Tamazight-Standard Moroccan',
+    'tr' => 'Turkish',
+    'uk' => 'Ukrainian',
+    'vi' => 'Vietnamese'
+  }.freeze
 
   # Creates a new NuixTranslator using Libre Translate API.
   def initialize

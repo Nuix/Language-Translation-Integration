@@ -3,7 +3,7 @@
 # Needs Selected Items: true
 
 require 'java'
-import javax.swing.JOptionPane
+java_import "javax.swing.JOptionPane"
 require File.join(File.dirname(__FILE__), 'language_translation.rb')
 # Get NuixTranslator classes.
 translators = NuixTranslator.translators
